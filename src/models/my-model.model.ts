@@ -20,6 +20,14 @@ export class MyModel extends Entity {
   })
   age: number;
 
+  /*
+  @property({
+    type: 'boolean',
+    default: true,
+  })
+  isEnrolled: boolean;
+  */
+
   constructor(data?: Partial<MyModel>) {
     super(data);
   }
