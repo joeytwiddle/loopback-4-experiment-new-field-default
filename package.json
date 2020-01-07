@@ -31,6 +31,7 @@
     "prestart": "npm run build",
     "start": "node -r source-map-support/register .",
     "start:watch": "nodemon -e '*' -w src -d 2 -x 'npm run start' || exit 1",
+    "test:watch": "nodemon -e '*' -w dist -d 2 -x 'npm run test:dev' || exit 1",
     "prepublishOnly": "npm run test"
   },
   "repository": {
