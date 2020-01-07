@@ -20,7 +20,6 @@ export class MyModel extends Entity {
   })
   age: number;
 
-
   constructor(data?: Partial<MyModel>) {
     super(data);
   }
