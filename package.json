@@ -30,6 +30,7 @@
     "migrate": "node ./dist/migrate",
     "prestart": "npm run build",
     "start": "node -r source-map-support/register .",
+    "start:watch": "nodemon -e '*' -w src -d 2 -x 'npm run start' || exit 1",
     "prepublishOnly": "npm run test"
   },
   "repository": {
