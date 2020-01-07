@@ -28,4 +28,22 @@ describe('HomePage', () => {
       .expect('Content-Type', /text\/html/)
       .expect(/<title>LoopBack API Explorer/);
   });
+
+  it('lets us create a model', async () => {
+    const response = await client
+      .post('/my-models')
+      .send({
+        name: 'Fred',
+        age: 40,
+      })
+      .expect(200);
+    const result = JSON.parse(response.text);
+    console.log('result:', result);
+  });
+
+  it('exposes models', async () => {
+    const response = await client.get('/my-models').expect(200);
+    const result = JSON.parse(response.text);
+    console.log('result:', result);
+  });
 });
