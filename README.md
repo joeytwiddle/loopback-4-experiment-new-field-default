@@ -1,3 +1,5 @@
 # lb4-test
 
+Some demo code for https://github.com/strongloop/loopback-next/issues/4375
+
 [![LoopBack](https://github.com/strongloop/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png)](http://loopback.io/)
